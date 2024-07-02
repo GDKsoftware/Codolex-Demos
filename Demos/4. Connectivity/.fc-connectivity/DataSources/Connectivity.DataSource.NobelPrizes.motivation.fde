@@ -1,0 +1,90 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Project",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "motivation",
+    "sourceName": "motivation",
+    "guid": "{CCF87B3A-82E6-4567-948F-9D9AB6F8FFBA}",
+    "fields": [
+        {
+            "name": "motivationID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "motivationID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{3415E067-E593-49DB-ABA3-DE0C3998A897}"
+        },
+        {
+            "name": "en",
+            "dataType": "string_",
+            "size": 240,
+            "defaultValue": "",
+            "sourceName": "en",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{FAA4869D-C75D-4795-929F-D15B16084711}"
+        },
+        {
+            "name": "se",
+            "dataType": "string_",
+            "size": 241,
+            "defaultValue": "",
+            "sourceName": "se",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{FC679031-4EF6-4B45-A774-1F645D757CC8}"
+        },
+        {
+            "name": "no",
+            "dataType": "string_",
+            "size": 117,
+            "defaultValue": "",
+            "sourceName": "no",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 3,
+            "generator": "",
+            "guid": "{7E4C90A0-44F5-41FC-AB5D-446E67351A02}"
+        }
+    ],
+    "associations": [
+        "{AD334939-1BEE-44A3-BE1A-AAE50C0D8687}"
+    ],
+    "datasource": "{D0CE5820-0BC6-47C0-8FED-39A04D9B13E5}"
+}

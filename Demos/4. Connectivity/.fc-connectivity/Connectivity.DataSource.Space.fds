@@ -1,0 +1,34 @@
+{
+    "name": "Space",
+    "dataSourceType": "REST",
+    "databaseServer": "None",
+    "generators": [
+    ],
+    "guid": "{B1A0D51A-15F0-4A8A-926B-726B90D48113}",
+    "entityFiles": [
+        {
+            "guid": "{E5657157-7C65-4D2C-B4CB-09D843487155}",
+            "filePath": "DataSources\\Connectivity.DataSource.Space.PeopleInSpace.fde"
+        },
+        {
+            "guid": "{CA06BA51-4F78-4A9C-B8E5-60E25659AC92}",
+            "filePath": "DataSources\\Connectivity.DataSource.Space.people.fde"
+        }
+    ],
+    "associations": [
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "people",
+            "name": "PeopleInSpace",
+            "sourceName": "",
+            "guid": "{F44F7557-28B3-403D-A44E-888E093524DD}",
+            "fromEntity": "{CA06BA51-4F78-4A9C-B8E5-60E25659AC92}",
+            "fromField": "{EDF95EE1-E301-437A-B0D7-25EBCC131F6C}",
+            "toEntity": "{E5657157-7C65-4D2C-B4CB-09D843487155}",
+            "toField": "{32634515-5EEE-42E3-BE84-A272C162737C}"
+        }
+    ]
+}

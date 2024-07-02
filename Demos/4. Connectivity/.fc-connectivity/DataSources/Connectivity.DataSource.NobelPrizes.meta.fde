@@ -1,0 +1,135 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Project",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "meta",
+    "sourceName": "meta",
+    "guid": "{B5205437-7C86-4CD0-A1D2-51CF6BC45785}",
+    "fields": [
+        {
+            "name": "metaID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "metaID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{04AB5BC1-1A8A-4A31-87B7-6217117693F5}"
+        },
+        {
+            "name": "offset",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "offset",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{ACB21337-6FDC-4881-8F96-D70CE5757D9E}"
+        },
+        {
+            "name": "limit",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "limit",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{D2C6765F-593F-436F-856C-40839BA8DB9F}"
+        },
+        {
+            "name": "count",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "count",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 3,
+            "generator": "",
+            "guid": "{980CB9B9-9567-4823-9111-DB3FE91D615E}"
+        },
+        {
+            "name": "terms",
+            "dataType": "string_",
+            "size": 93,
+            "defaultValue": "",
+            "sourceName": "terms",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 4,
+            "generator": "",
+            "guid": "{6B38C413-FB40-4940-A4EB-B4A7ACC07289}"
+        },
+        {
+            "name": "license",
+            "dataType": "string_",
+            "size": 101,
+            "defaultValue": "",
+            "sourceName": "license",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 5,
+            "generator": "",
+            "guid": "{9C083398-6D39-4440-AD1B-0B33C7D1E04C}"
+        },
+        {
+            "name": "disclaimer",
+            "dataType": "string_",
+            "size": 104,
+            "defaultValue": "",
+            "sourceName": "disclaimer",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 6,
+            "generator": "",
+            "guid": "{5FB0BF0B-3BD9-4630-B117-A042152EDA7D}"
+        }
+    ],
+    "associations": [
+        "{A2835A90-E1A2-4DB8-97DB-E475557F0D2D}"
+    ],
+    "datasource": "{D0CE5820-0BC6-47C0-8FED-39A04D9B13E5}"
+}

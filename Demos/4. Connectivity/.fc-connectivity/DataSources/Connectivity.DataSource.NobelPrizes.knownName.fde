@@ -1,0 +1,60 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Project",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "knownName",
+    "sourceName": "knownName",
+    "guid": "{A66B4E10-0D3A-4CC2-B894-4893478C098F}",
+    "fields": [
+        {
+            "name": "knownNameID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "knownNameID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{4E5CA9E4-FCDD-4EC8-BEFF-7AB1D241D018}"
+        },
+        {
+            "name": "en",
+            "dataType": "string_",
+            "size": 22,
+            "defaultValue": "",
+            "sourceName": "en",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{D6EEC85C-C3BE-4283-90DE-CC20FE6E9B7C}"
+        }
+    ],
+    "associations": [
+        "{C1D82253-1602-4189-AE7F-107EC1D08DE6}"
+    ],
+    "datasource": "{D0CE5820-0BC6-47C0-8FED-39A04D9B13E5}"
+}

@@ -1,0 +1,77 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Project",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "NobelPrizeList",
+    "sourceName": "NobelPrizeList",
+    "guid": "{9FFE3BA1-DE2E-4B87-B026-7310A346C8E7}",
+    "fields": [
+        {
+            "name": "NobelPrizeListID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "NobelPrizeListID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{EA193322-BC60-49A1-B4FF-CA59F488673A}"
+        },
+        {
+            "name": "metaID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "metaID",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{42C08D74-26C1-446E-8FE4-E939A47C505E}"
+        },
+        {
+            "name": "linksID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "linksID",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{6C0066C3-DB5E-43A7-9A31-1D5685B567B7}"
+        }
+    ],
+    "associations": [
+        "{ECC18B91-A78A-47EB-830C-19F36F9E6A48}",
+        "{A2835A90-E1A2-4DB8-97DB-E475557F0D2D}",
+        "{55337816-ADD5-48B8-93DB-DF4DCC447A8B}"
+    ],
+    "datasource": "{D0CE5820-0BC6-47C0-8FED-39A04D9B13E5}"
+}

@@ -1,0 +1,111 @@
+{
+    "name": "",
+    "visibility": "Public_",
+    "isStatic": false,
+    "returnValue": "{887657B6-553E-4099-8EDE-B3EC2E30AE72}",
+    "autorisationSettings": {
+        "hasAnonymousAccess": false,
+        "rolesWithAccess": [
+        ],
+        "guid": "{3696EBE2-D6E7-46F5-BC69-DB2DD774069D}"
+    },
+    "apiEndpoint": {
+        "rESTMethod": "Automatic",
+        "path": "",
+        "guid": "{4F8B5D6A-DAFB-4FA6-B708-194EA8879EBB}"
+    },
+    "isFunction": false,
+    "isPublished": false,
+    "guid": "{8188B32E-4AE3-4951-A33D-AA07E786D9FE}",
+    "start": "{493D8B32-F969-4527-91F1-FCD4E8EE9719}",
+    "ends": [
+        "{BEF15F0D-D7F2-42EC-933E-07392312A658}"
+    ],
+    "parameters": [
+    ],
+    "elements": [
+        {
+            "bounds": [
+                0,
+                0,
+                0,
+                0,
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ],
+            "componentName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Start.TFlowStart",
+            "guid": "{493D8B32-F969-4527-91F1-FCD4E8EE9719}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+                "{875DEF5E-7D1B-45FB-935C-1CCB74F3D8D1}"
+            ],
+            "startSequence": "{875DEF5E-7D1B-45FB-935C-1CCB74F3D8D1}"
+        },
+        {
+            "returnVariable": "",
+            "bounds": [
+                0,
+                0,
+                0,
+                0,
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ],
+            "componentName": "Core.Structural.End",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.End",
+            "guid": "{BEF15F0D-D7F2-42EC-933E-07392312A658}",
+            "incomingSequences": [
+                "{875DEF5E-7D1B-45FB-935C-1CCB74F3D8D1}"
+            ],
+            "outgoingSequences": [
+            ]
+        },
+        {
+            "name": "",
+            "variableType": "None",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{887657B6-553E-4099-8EDE-B3EC2E30AE72}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{875DEF5E-7D1B-45FB-935C-1CCB74F3D8D1}",
+            "toElement": "{BEF15F0D-D7F2-42EC-933E-07392312A658}",
+            "fromElement": "{493D8B32-F969-4527-91F1-FCD4E8EE9719}"
+        }
+    ]
+}

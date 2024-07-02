@@ -1,0 +1,36 @@
+{
+    "name": "Connectivity",
+    "fileName": "Connectivity.fcp",
+    "supportedLanguages": 1,
+    "projectVersion": "2.2.1",
+    "autorisationRoles": [
+    ],
+    "storageVersion": "",
+    "datasources": [
+        {
+            "guid": "{D0CE5820-0BC6-47C0-8FED-39A04D9B13E5}",
+            "filePath": "Connectivity.DataSource.NobelPrizes.fds"
+        },
+        {
+            "guid": "{B1A0D51A-15F0-4A8A-926B-726B90D48113}",
+            "filePath": "Connectivity.DataSource.Space.fds"
+        }
+    ],
+    "guid": "{98B8C6A7-2313-48FE-B213-C9A7ED64B8BE}",
+    "modules": [
+        {
+            "name": "Rest",
+            "guid": "{56170D3A-D443-475D-A1D3-3C5F6715F55A}",
+            "FlowClasses": [
+                {
+                    "guid": "{DC340909-617E-4E1B-8924-C6854DC6DB82}",
+                    "filePath": "Rest\\Rest.NobelPrizes.fsf"
+                },
+                {
+                    "guid": "{BE17958A-660F-4A48-AFCA-12EF0F3A7E5B}",
+                    "filePath": "Rest\\Rest.Space.fsf"
+                }
+            ]
+        }
+    ]
+}

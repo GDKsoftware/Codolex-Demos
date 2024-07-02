@@ -1,0 +1,21 @@
+{
+    "name": "Space",
+    "variables": [
+    ],
+    "language": "Delphi",
+    "guid": "{BE17958A-660F-4A48-AFCA-12EF0F3A7E5B}",
+    "flows": [
+        {
+            "guid": "{385D711A-AA5C-467B-8D45-81176FDF8C56}",
+            "filePath": "Rest\\Rest.Space.ConvertListToText.fsf"
+        },
+        {
+            "guid": "{9748ABFE-A81D-47A0-8752-FAFC2D220716}",
+            "filePath": "Rest\\Rest.Space.ListPeopleInSpace.fsf"
+        },
+        {
+            "guid": "{37740661-55EF-4BD3-A057-5AC0D543BAE1}",
+            "filePath": "Rest\\Rest.Space.RestCall.fsf"
+        }
+    ]
+}

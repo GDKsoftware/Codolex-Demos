@@ -1,0 +1,354 @@
+{
+    "name": "ListAll",
+    "visibility": "Public_",
+    "isStatic": false,
+    "returnValue": "{55E6F2F2-7589-43C7-AE19-35EFC5F3EA65}",
+    "autorisationSettings": {
+        "hasAnonymousAccess": false,
+        "rolesWithAccess": [
+        ],
+        "guid": "{11B65932-B47F-4214-9F37-A976CDA12EBA}"
+    },
+    "apiEndpoint": {
+        "rESTMethod": "Automatic",
+        "path": "",
+        "guid": "{77F620FC-2819-4687-BE97-EB3C6E81CDCF}"
+    },
+    "isFunction": true,
+    "isPublished": false,
+    "guid": "{1E8923D0-15FC-4EDF-B797-38A3FB9EDF51}",
+    "start": "{E4A12BE7-00E1-462B-A710-6FC410DDCC70}",
+    "ends": [
+        "{77115E21-42A5-4B29-BE1D-A4F7F45C57BA}"
+    ],
+    "parameters": [
+    ],
+    "elements": [
+        {
+            "bounds": [
+                90,
+                520,
+                160,
+                590,
+                [
+                    90,
+                    520
+                ],
+                [
+                    160,
+                    590
+                ]
+            ],
+            "componentName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Start.TFlowStart",
+            "guid": "{E4A12BE7-00E1-462B-A710-6FC410DDCC70}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+                "{7E3E18D0-9710-45A2-B654-7E9B375FE528}"
+            ],
+            "startSequence": "{7E3E18D0-9710-45A2-B654-7E9B375FE528}"
+        },
+        {
+            "returnVariable": "{47B2EFAB-C2A5-4DC8-9481-4CD8B1F4154C}",
+            "bounds": [
+                860,
+                520,
+                930,
+                590,
+                [
+                    860,
+                    520
+                ],
+                [
+                    930,
+                    590
+                ]
+            ],
+            "componentName": "Core.Structural.End",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.End",
+            "guid": "{77115E21-42A5-4B29-BE1D-A4F7F45C57BA}",
+            "incomingSequences": [
+                "{79C55617-DBA1-4015-BF7E-708034578D7F}"
+            ],
+            "outgoingSequences": [
+            ]
+        },
+        {
+            "name": "NobelPrizeList",
+            "variableType": "Entity_",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{55E6F2F2-7589-43C7-AE19-35EFC5F3EA65}",
+            "entity": "{9FFE3BA1-DE2E-4B87-B026-7310A346C8E7}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        160,
+                        555
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        195,
+                        555
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{7E3E18D0-9710-45A2-B654-7E9B375FE528}",
+            "toElement": "{08A22620-494B-4736-9BDD-B73863129152}",
+            "fromElement": "{E4A12BE7-00E1-462B-A710-6FC410DDCC70}"
+        },
+        {
+            "method": "GET",
+            "uRL": "'https:\/\/api.nobelprize.org\/2.1\/nobelPrizes'",
+            "contentType": "",
+            "body": "",
+            "parameters": [
+            ],
+            "hasBasicAuthentication": false,
+            "userName": "",
+            "password": "",
+            "requestTimeOut": 0,
+            "useSSLv2": false,
+            "useSSLv3": false,
+            "useTLSv1_0": false,
+            "useTLSv1_1": false,
+            "useTLSv1_2": false,
+            "useTLSv1_3": false,
+            "expression": "",
+            "bounds": [
+                195,
+                519,
+                425,
+                591,
+                [
+                    195,
+                    519
+                ],
+                [
+                    425,
+                    591
+                ]
+            ],
+            "componentName": "Core.Activities.RESTOperation",
+            "description": "",
+            "caption": "Get all Nobel prizes",
+            "documentation": "",
+            "elementClass": "Core.Activities.RESTOperation",
+            "guid": "{08A22620-494B-4736-9BDD-B73863129152}",
+            "incomingSequences": [
+                "{7E3E18D0-9710-45A2-B654-7E9B375FE528}"
+            ],
+            "outgoingSequences": [
+                "{9A49EA14-D8C4-4610-924C-B99CC9A67D80}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{9D440BF2-E827-4001-96A4-28E138738C33}"
+        },
+        {
+            "name": "NobelPrizesJSON",
+            "variableType": "string_",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{9D440BF2-E827-4001-96A4-28E138738C33}",
+            "owner": "{08A22620-494B-4736-9BDD-B73863129152}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        425,
+                        555
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        534,
+                        555
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{9A49EA14-D8C4-4610-924C-B99CC9A67D80}",
+            "toElement": "{5B308C62-8968-4EB6-B681-51F5E5E35A82}",
+            "fromElement": "{08A22620-494B-4736-9BDD-B73863129152}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        726,
+                        555
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        860,
+                        555
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{79C55617-DBA1-4015-BF7E-708034578D7F}",
+            "toElement": "{77115E21-42A5-4B29-BE1D-A4F7F45C57BA}",
+            "fromElement": "{5B308C62-8968-4EB6-B681-51F5E5E35A82}"
+        },
+        {
+            "entityResultType": "Single",
+            "expression": "",
+            "bounds": [
+                534,
+                519,
+                726,
+                591,
+                [
+                    534,
+                    519
+                ],
+                [
+                    726,
+                    591
+                ]
+            ],
+            "componentName": "Core.Activities.JSONToEntity",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Activities.JSONToEntity",
+            "guid": "{5B308C62-8968-4EB6-B681-51F5E5E35A82}",
+            "incomingSequences": [
+                "{9A49EA14-D8C4-4610-924C-B99CC9A67D80}"
+            ],
+            "outgoingSequences": [
+                "{79C55617-DBA1-4015-BF7E-708034578D7F}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{47B2EFAB-C2A5-4DC8-9481-4CD8B1F4154C}",
+            "JSONVariable": "{9D440BF2-E827-4001-96A4-28E138738C33}",
+            "dataEntity": "{9FFE3BA1-DE2E-4B87-B026-7310A346C8E7}"
+        },
+        {
+            "name": "NobelPrizeList",
+            "variableType": "Entity_",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{47B2EFAB-C2A5-4DC8-9481-4CD8B1F4154C}",
+            "entity": "{9FFE3BA1-DE2E-4B87-B026-7310A346C8E7}",
+            "owner": "{5B308C62-8968-4EB6-B681-51F5E5E35A82}"
+        }
+    ]
+}

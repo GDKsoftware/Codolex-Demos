@@ -1,0 +1,60 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Project",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "fullName",
+    "sourceName": "fullName",
+    "guid": "{82DC4051-4FE3-41A6-9BDB-C19FD6928957}",
+    "fields": [
+        {
+            "name": "fullNameID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "fullNameID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{A310458D-6270-49BF-B838-B3E97CB90CA2}"
+        },
+        {
+            "name": "en",
+            "dataType": "string_",
+            "size": 86,
+            "defaultValue": "",
+            "sourceName": "en",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{28830F04-0B35-48A2-BA3F-AA5B3E3BF22D}"
+        }
+    ],
+    "associations": [
+        "{C1DC85CC-159F-4BF0-B9C7-3A421D23EBFF}"
+    ],
+    "datasource": "{D0CE5820-0BC6-47C0-8FED-39A04D9B13E5}"
+}

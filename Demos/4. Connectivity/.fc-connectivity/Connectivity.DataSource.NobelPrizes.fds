@@ -1,0 +1,224 @@
+{
+    "name": "NobelPrizes",
+    "dataSourceType": "REST",
+    "databaseServer": "None",
+    "generators": [
+    ],
+    "guid": "{D0CE5820-0BC6-47C0-8FED-39A04D9B13E5}",
+    "entityFiles": [
+        {
+            "guid": "{9FFE3BA1-DE2E-4B87-B026-7310A346C8E7}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.NobelPrizeList.fde"
+        },
+        {
+            "guid": "{4795C8BF-2CA5-4EDB-AD64-68F09C3E7D98}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.category.fde"
+        },
+        {
+            "guid": "{60F11D13-41AF-4CEA-80BA-8898909769AB}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.categoryFullName.fde"
+        },
+        {
+            "guid": "{82DC4051-4FE3-41A6-9BDB-C19FD6928957}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.fullName.fde"
+        },
+        {
+            "guid": "{A66B4E10-0D3A-4CC2-B894-4893478C098F}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.knownName.fde"
+        },
+        {
+            "guid": "{D5BD3F07-6061-428D-93B6-646F89FF67EA}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.laureates.fde"
+        },
+        {
+            "guid": "{39235B95-CDE8-4004-BBC0-2E96C5B7E170}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.links.fde"
+        },
+        {
+            "guid": "{B5205437-7C86-4CD0-A1D2-51CF6BC45785}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.meta.fde"
+        },
+        {
+            "guid": "{CCF87B3A-82E6-4567-948F-9D9AB6F8FFBA}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.motivation.fde"
+        },
+        {
+            "guid": "{FACE0AAE-B24A-41A2-9819-2064D812BF34}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.nobelPrizes.fde"
+        },
+        {
+            "guid": "{3EC7BB53-E575-4272-B916-996FEE32190B}",
+            "filePath": "DataSources\\Connectivity.DataSource.NobelPrizes.orgName.fde"
+        }
+    ],
+    "associations": [
+        {
+            "associationType": "OneToOne",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "laureates",
+            "name": "knownName",
+            "sourceName": "",
+            "guid": "{C1D82253-1602-4189-AE7F-107EC1D08DE6}",
+            "fromEntity": "{D5BD3F07-6061-428D-93B6-646F89FF67EA}",
+            "fromField": "{7EC21142-A223-4A3D-900C-48A9BECCD3BE}",
+            "toEntity": "{A66B4E10-0D3A-4CC2-B894-4893478C098F}",
+            "toField": "{4E5CA9E4-FCDD-4EC8-BEFF-7AB1D241D018}"
+        },
+        {
+            "associationType": "OneToOne",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "laureates",
+            "name": "fullName",
+            "sourceName": "",
+            "guid": "{C1DC85CC-159F-4BF0-B9C7-3A421D23EBFF}",
+            "fromEntity": "{D5BD3F07-6061-428D-93B6-646F89FF67EA}",
+            "fromField": "{22E3185F-4FBA-43A7-AE8E-B62C24AF175B}",
+            "toEntity": "{82DC4051-4FE3-41A6-9BDB-C19FD6928957}",
+            "toField": "{A310458D-6270-49BF-B838-B3E97CB90CA2}"
+        },
+        {
+            "associationType": "OneToOne",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "laureates",
+            "name": "motivation",
+            "sourceName": "",
+            "guid": "{AD334939-1BEE-44A3-BE1A-AAE50C0D8687}",
+            "fromEntity": "{D5BD3F07-6061-428D-93B6-646F89FF67EA}",
+            "fromField": "{8B3A98AB-047D-4C52-953C-DD47A97EEFE9}",
+            "toEntity": "{CCF87B3A-82E6-4567-948F-9D9AB6F8FFBA}",
+            "toField": "{3415E067-E593-49DB-ABA3-DE0C3998A897}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "links",
+            "name": "laureates",
+            "sourceName": "",
+            "guid": "{1D29939C-E482-4967-A40D-8E824A5D88F8}",
+            "fromEntity": "{39235B95-CDE8-4004-BBC0-2E96C5B7E170}",
+            "fromField": "{2767E4F7-BEE1-4469-90A7-C9A5A23F21F1}",
+            "toEntity": "{D5BD3F07-6061-428D-93B6-646F89FF67EA}",
+            "toField": "{75DB882B-F9E7-47B1-A7A5-F48A2DAC5B9D}"
+        },
+        {
+            "associationType": "OneToOne",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "laureates",
+            "name": "orgName",
+            "sourceName": "",
+            "guid": "{4C3ED465-CEAC-48C7-A91F-1DC86BF15A94}",
+            "fromEntity": "{D5BD3F07-6061-428D-93B6-646F89FF67EA}",
+            "fromField": "{DF680F1B-6821-40C6-95EE-8CB61D053561}",
+            "toEntity": "{3EC7BB53-E575-4272-B916-996FEE32190B}",
+            "toField": "{F4B3BFF2-06A9-43DB-85D1-984524291E71}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "nobelPrizes",
+            "name": "NobelPrizeList",
+            "sourceName": "",
+            "guid": "{ECC18B91-A78A-47EB-830C-19F36F9E6A48}",
+            "fromEntity": "{FACE0AAE-B24A-41A2-9819-2064D812BF34}",
+            "fromField": "{5F63E80E-CAC8-4450-B77C-54D91082E859}",
+            "toEntity": "{9FFE3BA1-DE2E-4B87-B026-7310A346C8E7}",
+            "toField": "{EA193322-BC60-49A1-B4FF-CA59F488673A}"
+        },
+        {
+            "associationType": "OneToOne",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "NobelPrizeList",
+            "name": "meta",
+            "sourceName": "",
+            "guid": "{A2835A90-E1A2-4DB8-97DB-E475557F0D2D}",
+            "fromEntity": "{9FFE3BA1-DE2E-4B87-B026-7310A346C8E7}",
+            "fromField": "{42C08D74-26C1-446E-8FE4-E939A47C505E}",
+            "toEntity": "{B5205437-7C86-4CD0-A1D2-51CF6BC45785}",
+            "toField": "{04AB5BC1-1A8A-4A31-87B7-6217117693F5}"
+        },
+        {
+            "associationType": "OneToOne",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "NobelPrizeList",
+            "name": "links",
+            "sourceName": "",
+            "guid": "{55337816-ADD5-48B8-93DB-DF4DCC447A8B}",
+            "fromEntity": "{9FFE3BA1-DE2E-4B87-B026-7310A346C8E7}",
+            "fromField": "{6C0066C3-DB5E-43A7-9A31-1D5685B567B7}",
+            "toEntity": "{39235B95-CDE8-4004-BBC0-2E96C5B7E170}",
+            "toField": "{199FD3ED-CEDF-48A0-B240-0ADD770CDEF7}"
+        },
+        {
+            "associationType": "OneToOne",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "nobelPrizes",
+            "name": "category",
+            "sourceName": "",
+            "guid": "{80F82BE1-6B6D-4339-B0A7-398883933831}",
+            "fromEntity": "{FACE0AAE-B24A-41A2-9819-2064D812BF34}",
+            "fromField": "{32EDFAEB-6368-4462-B91B-16995272E0B5}",
+            "toEntity": "{4795C8BF-2CA5-4EDB-AD64-68F09C3E7D98}",
+            "toField": "{4BFD78DD-7D10-4F5B-B638-EC50D51C834D}"
+        },
+        {
+            "associationType": "OneToOne",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "nobelPrizes",
+            "name": "categoryFullName",
+            "sourceName": "",
+            "guid": "{A8D5AD88-578F-424B-9FD0-A8CF810D9119}",
+            "fromEntity": "{FACE0AAE-B24A-41A2-9819-2064D812BF34}",
+            "fromField": "{11E92264-477A-4734-A7A0-39CB5F48CD50}",
+            "toEntity": "{60F11D13-41AF-4CEA-80BA-8898909769AB}",
+            "toField": "{793BD5C9-6E8F-4C50-82A3-25304F1FC373}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "links",
+            "name": "nobelPrizes",
+            "sourceName": "",
+            "guid": "{80AE7AE6-534C-4218-BA94-4C9475FBC8A7}",
+            "fromEntity": "{39235B95-CDE8-4004-BBC0-2E96C5B7E170}",
+            "fromField": "{4F0A82CE-49E5-4DBC-9C07-483232D60996}",
+            "toEntity": "{FACE0AAE-B24A-41A2-9819-2064D812BF34}",
+            "toField": "{F7775A80-B963-4791-B319-CD3196125F71}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "laureates",
+            "name": "nobelPrizes",
+            "sourceName": "",
+            "guid": "{6F2E4530-252E-4DC7-8CE9-CA3B195989CA}",
+            "fromEntity": "{D5BD3F07-6061-428D-93B6-646F89FF67EA}",
+            "fromField": "{86B9EA85-DB37-4EB6-A732-B3FE3AB0C564}",
+            "toEntity": "{FACE0AAE-B24A-41A2-9819-2064D812BF34}",
+            "toField": "{F7775A80-B963-4791-B319-CD3196125F71}"
+        }
+    ]
+}

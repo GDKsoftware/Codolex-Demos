@@ -1,0 +1,10 @@
+{
+    "programName": "Connectivity.dproj",
+    "guid": "{D698E7BD-6789-4BE7-9E7D-993527A92442}",
+    "projects": [
+        {
+            "name": "Connectivity",
+            "projectGUID": "{98B8C6A7-2313-48FE-B213-C9A7ED64B8BE}"
+        }
+    ]
+}

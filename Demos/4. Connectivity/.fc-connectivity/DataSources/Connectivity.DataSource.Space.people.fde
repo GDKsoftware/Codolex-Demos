@@ -1,0 +1,90 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Project",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "people",
+    "sourceName": "people",
+    "guid": "{CA06BA51-4F78-4A9C-B8E5-60E25659AC92}",
+    "fields": [
+        {
+            "name": "peopleID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "peopleID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{A40C131C-FC6A-4D23-8F23-8386066A6152}"
+        },
+        {
+            "name": "craft",
+            "dataType": "string_",
+            "size": 8,
+            "defaultValue": "",
+            "sourceName": "craft",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{AD721A44-D92D-4472-AEED-054344C69CED}"
+        },
+        {
+            "name": "name",
+            "dataType": "string_",
+            "size": 20,
+            "defaultValue": "",
+            "sourceName": "name",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{F2ACF5CC-37EA-40DE-ABFB-67404CDF7F2A}"
+        },
+        {
+            "name": "PeopleInSpaceID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "PeopleInSpaceID",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{EDF95EE1-E301-437A-B0D7-25EBCC131F6C}"
+        }
+    ],
+    "associations": [
+        "{F44F7557-28B3-403D-A44E-888E093524DD}"
+    ],
+    "datasource": "{B1A0D51A-15F0-4A8A-926B-726B90D48113}"
+}

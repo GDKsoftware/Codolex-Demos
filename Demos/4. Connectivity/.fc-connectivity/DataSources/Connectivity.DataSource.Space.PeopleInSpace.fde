@@ -1,0 +1,75 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Project",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "PeopleInSpace",
+    "sourceName": "PeopleInSpace",
+    "guid": "{E5657157-7C65-4D2C-B4CB-09D843487155}",
+    "fields": [
+        {
+            "name": "PeopleInSpaceID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "PeopleInSpaceID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{32634515-5EEE-42E3-BE84-A272C162737C}"
+        },
+        {
+            "name": "number",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "number",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{9F6F0236-1A25-41F6-8D1B-4AA1B7629FBD}"
+        },
+        {
+            "name": "message",
+            "dataType": "string_",
+            "size": 7,
+            "defaultValue": "",
+            "sourceName": "message",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 3,
+            "generator": "",
+            "guid": "{77B2BAB9-6771-4937-8F73-A7ABD6973F82}"
+        }
+    ],
+    "associations": [
+        "{F44F7557-28B3-403D-A44E-888E093524DD}"
+    ],
+    "datasource": "{B1A0D51A-15F0-4A8A-926B-726B90D48113}"
+}

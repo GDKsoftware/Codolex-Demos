@@ -1,0 +1,75 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Project",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "orgName",
+    "sourceName": "orgName",
+    "guid": "{3EC7BB53-E575-4272-B916-996FEE32190B}",
+    "fields": [
+        {
+            "name": "orgNameID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "orgNameID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 0,
+            "generator": "",
+            "guid": "{F4B3BFF2-06A9-43DB-85D1-984524291E71}"
+        },
+        {
+            "name": "en",
+            "dataType": "string_",
+            "size": 30,
+            "defaultValue": "",
+            "sourceName": "en",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{C95CE94A-7F99-41C7-8EF8-6A00F1A565E7}"
+        },
+        {
+            "name": "no",
+            "dataType": "string_",
+            "size": 21,
+            "defaultValue": "",
+            "sourceName": "no",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{FE260BE9-C656-439B-A7BB-50829E398450}"
+        }
+    ],
+    "associations": [
+        "{4C3ED465-CEAC-48C7-A91F-1DC86BF15A94}"
+    ],
+    "datasource": "{D0CE5820-0BC6-47C0-8FED-39A04D9B13E5}"
+}

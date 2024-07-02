@@ -1,0 +1,13 @@
+{
+    "name": "NobelPrizes",
+    "variables": [
+    ],
+    "language": "Delphi",
+    "guid": "{DC340909-617E-4E1B-8924-C6854DC6DB82}",
+    "flows": [
+        {
+            "guid": "{1E8923D0-15FC-4EDF-B797-38A3FB9EDF51}",
+            "filePath": "Rest\\Rest.NobelPrizes.ListAll.fsf"
+        }
+    ]
+}
