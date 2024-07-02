@@ -1,0 +1,10 @@
+{
+    "programName": "Database.dproj",
+    "guid": "{ABBFB726-9928-4F67-A438-32EF5B5E4984}",
+    "projects": [
+        {
+            "name": "Database",
+            "projectGUID": "{1F551114-D1FE-48FA-B353-74F469C743FC}"
+        }
+    ]
+}

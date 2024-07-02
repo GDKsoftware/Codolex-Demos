@@ -1,0 +1,44 @@
+{
+    "name": "Activities",
+    "fileName": "Activities.fcp",
+    "supportedLanguages": 1,
+    "projectVersion": "2.1.0",
+    "storageVersion": "2.1.0",
+    "guid": "{9C7FD2D9-4515-418D-A0D9-2DEF919EE058}",
+    "datasources": [
+    ],
+    "modules": [
+        {
+            "name": "FileSystem",
+            "guid": "{8010BB35-0AFE-4163-B1A0-B9CCFF788633}",
+            "FlowClasses": [
+                {
+                    "guid": "{88AD4242-8398-405A-984C-D14C46D73341}",
+                    "filePath": "FileSystem\\FileSystem.FileOperations.fsf"
+                },
+                {
+                    "guid": "{7E55926B-3AC0-43D9-A924-E27D4FEB1000}",
+                    "filePath": "FileSystem\\FileSystem.Hasing.fsf"
+                },
+                {
+                    "guid": "{80F8FAD1-E79D-4079-AFEB-FD8F0799ED50}",
+                    "filePath": "FileSystem\\FileSystem.Utils.fsf"
+                }
+            ]
+        },
+        {
+            "name": "Variables",
+            "guid": "{E78AFE00-B429-4B71-B13D-FC901441A04F}",
+            "FlowClasses": [
+                {
+                    "guid": "{C4A82270-ABC9-44F5-9B3B-AB53A32EDD94}",
+                    "filePath": "Variables\\Variables.CreateVariable.fsf"
+                },
+                {
+                    "guid": "{8FA25A73-4CFE-43FB-86ED-ABE86AE96C12}",
+                    "filePath": "Variables\\Variables.Lists.fsf"
+                }
+            ]
+        }
+    ]
+}

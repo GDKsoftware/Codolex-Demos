@@ -1,0 +1,17 @@
+{
+    "name": "Employees",
+    "variables": [
+    ],
+    "language": "Delphi",
+    "guid": "{4FF5BA8F-DCCB-453F-B61C-74741F9F7DF3}",
+    "flows": [
+        {
+            "guid": "{C60FC7EC-7274-4042-80E6-2F6DA1F3F844}",
+            "filePath": "Default\\Default.Employees.CreateAndSaveEmployee.fsf"
+        },
+        {
+            "guid": "{92FA0CBE-84B6-46F0-A9A7-E152F164B2F5}",
+            "filePath": "Default\\Default.Employees.StartAndRollback.fsf"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "CreateVariable",
+    "language": "Delphi",
+    "guid": "{C4A82270-ABC9-44F5-9B3B-AB53A32EDD94}",
+    "flows": [
+        {
+            "guid": "{47EFCA39-AEAD-4654-B3C8-2F51E34F7409}",
+            "filePath": "Variables\\Variables.CreateVariable.CreateSimpleVariable.fsf"
+        }
+    ],
+    "variables": [
+    ]
+}

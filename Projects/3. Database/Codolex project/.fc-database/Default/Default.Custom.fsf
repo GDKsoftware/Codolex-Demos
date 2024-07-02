@@ -1,0 +1,13 @@
+{
+    "name": "Custom",
+    "variables": [
+    ],
+    "language": "Delphi",
+    "guid": "{322E9123-996A-4619-8105-AF4829CFA708}",
+    "flows": [
+        {
+            "guid": "{9C12129B-F015-499D-94E1-99A58D84F136}",
+            "filePath": "Default\\Default.Custom.CustomSQL.fsf"
+        }
+    ]
+}

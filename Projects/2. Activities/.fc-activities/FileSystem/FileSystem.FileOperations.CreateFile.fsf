@@ -1,0 +1,785 @@
+{
+    "name": "CreateFile",
+    "visibility": "Public_",
+    "isStatic": false,
+    "isFunction": false,
+    "guid": "{FC85C886-974E-4B03-8672-19F81280284F}",
+    "returnValue": "{7323E663-5426-4DFE-9FE8-D77BA5F84E8C}",
+    "start": "{566DA703-91B7-4775-A051-74D0C108C9F6}",
+    "ends": [
+        "{8A8E5246-EDD6-47DE-8E9D-12BDF12571AD}"
+    ],
+    "parameters": [
+    ],
+    "elements": [
+        {
+            "bounds": [
+                30,
+                420,
+                100,
+                490,
+                [
+                    30,
+                    420
+                ],
+                [
+                    100,
+                    490
+                ]
+            ],
+            "componentName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Start.TFlowStart",
+            "guid": "{566DA703-91B7-4775-A051-74D0C108C9F6}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+                "{DA23096A-C537-42CC-8670-BD82A012435C}"
+            ],
+            "startSequence": "{DA23096A-C537-42CC-8670-BD82A012435C}"
+        },
+        {
+            "bounds": [
+                1465,
+                420,
+                1535,
+                490,
+                [
+                    1465,
+                    420
+                ],
+                [
+                    1535,
+                    490
+                ]
+            ],
+            "componentName": "Core.Structural.End",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.End",
+            "guid": "{8A8E5246-EDD6-47DE-8E9D-12BDF12571AD}",
+            "incomingSequences": [
+                "{5D9474B4-657B-411D-8CFA-510E919436E2}"
+            ],
+            "outgoingSequences": [
+            ]
+        },
+        {
+            "name": "",
+            "variableType": "None",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{7323E663-5426-4DFE-9FE8-D77BA5F84E8C}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        1425,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        1465,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{5D9474B4-657B-411D-8CFA-510E919436E2}",
+            "toElement": "{8A8E5246-EDD6-47DE-8E9D-12BDF12571AD}",
+            "fromElement": "{E1D41066-7C52-480A-9852-6EF508F30CE8}"
+        },
+        {
+            "part": "File_",
+            "path": "Filename",
+            "expression": "",
+            "bounds": [
+                1205,
+                425,
+                1425,
+                485,
+                [
+                    1205,
+                    425
+                ],
+                [
+                    1425,
+                    485
+                ]
+            ],
+            "componentName": "Core.Activities.FileSystemCreate",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Activities.FileSystemCreate",
+            "guid": "{E1D41066-7C52-480A-9852-6EF508F30CE8}",
+            "incomingSequences": [
+                "{0CD36A52-02DF-4B26-BF1D-36EEF35C717F}"
+            ],
+            "outgoingSequences": [
+                "{5D9474B4-657B-411D-8CFA-510E919436E2}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{E67AB272-0FFB-469E-A21E-84C48B06EA27}",
+            "options": [
+            ]
+        },
+        {
+            "name": "",
+            "variableType": "None",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{E67AB272-0FFB-469E-A21E-84C48B06EA27}",
+            "owner": "{E1D41066-7C52-480A-9852-6EF508F30CE8}"
+        },
+        {
+            "part": "File_",
+            "path": "Filename",
+            "expression": "",
+            "bounds": [
+                734,
+                419,
+                946,
+                491,
+                [
+                    734,
+                    419
+                ],
+                [
+                    946,
+                    491
+                ]
+            ],
+            "componentName": "Core.Activities.FileSystemExists",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Activities.FileSystemExists",
+            "guid": "{2F14F9AB-C6FE-4242-8001-4C7F56488F71}",
+            "incomingSequences": [
+                "{E950C34F-F13C-4A52-97EB-3358C653117A}"
+            ],
+            "outgoingSequences": [
+                "{47621F74-9D0A-4231-826F-470629F3A3BF}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{3A7DFC2E-6BD3-432B-B05B-6427E279F759}",
+            "options": [
+            ]
+        },
+        {
+            "name": "FileExists",
+            "variableType": "Boolean_",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{3A7DFC2E-6BD3-432B-B05B-6427E279F759}",
+            "owner": "{2F14F9AB-C6FE-4242-8001-4C7F56488F71}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        946,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        980,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{47621F74-9D0A-4231-826F-470629F3A3BF}",
+            "toElement": "{10C0282F-CA1D-4C71-9917-B3E3B3DDE655}",
+            "fromElement": "{2F14F9AB-C6FE-4242-8001-4C7F56488F71}"
+        },
+        {
+            "orderNumber": 2,
+            "conditionType": "Boolean_",
+            "conditionOperator": "Equals",
+            "conditionValue": "False",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        1050,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        1205,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "False",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{0CD36A52-02DF-4B26-BF1D-36EEF35C717F}",
+            "toElement": "{E1D41066-7C52-480A-9852-6EF508F30CE8}",
+            "fromElement": "{10C0282F-CA1D-4C71-9917-B3E3B3DDE655}"
+        },
+        {
+            "bounds": [
+                980,
+                420,
+                1050,
+                490,
+                [
+                    980,
+                    420
+                ],
+                [
+                    1050,
+                    490
+                ]
+            ],
+            "componentName": "Core.Structural.Decision",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.Decision",
+            "guid": "{10C0282F-CA1D-4C71-9917-B3E3B3DDE655}",
+            "incomingSequences": [
+                "{47621F74-9D0A-4231-826F-470629F3A3BF}"
+            ],
+            "outgoingSequences": [
+                "{0CD36A52-02DF-4B26-BF1D-36EEF35C717F}",
+                "{1C029F83-A916-4536-9C07-906933E11200}"
+            ],
+            "variableToUse": "{3A7DFC2E-6BD3-432B-B05B-6427E279F759}"
+        },
+        {
+            "message": "File already exists!",
+            "exceptionType": "",
+            "exceptionNamespace": "",
+            "bounds": [
+                1120,
+                255,
+                1190,
+                325,
+                [
+                    1120,
+                    255
+                ],
+                [
+                    1190,
+                    325
+                ]
+            ],
+            "componentName": "Core.Structural.Exception",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.Exception",
+            "guid": "{31E5CFAA-D117-4C7A-900B-E5C7891E643D}",
+            "incomingSequences": [
+                "{1C029F83-A916-4536-9C07-906933E11200}",
+                "{4BDC6B7B-12C9-499F-9EBD-C9CC35672862}"
+            ],
+            "outgoingSequences": [
+            ]
+        },
+        {
+            "orderNumber": 1,
+            "conditionType": "Boolean_",
+            "conditionOperator": "Equals",
+            "conditionValue": "True",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        768,
+                        0
+                    ],
+                    "From_",
+                    "Top",
+                    0,
+                    [
+                        1015,
+                        420
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        1120,
+                        290
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "True",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{1C029F83-A916-4536-9C07-906933E11200}",
+            "toElement": "{31E5CFAA-D117-4C7A-900B-E5C7891E643D}",
+            "fromElement": "{10C0282F-CA1D-4C71-9917-B3E3B3DDE655}"
+        },
+        {
+            "colourThemeIndex": 0,
+            "bounds": [
+                70,
+                165,
+                310,
+                255,
+                [
+                    70,
+                    165
+                ],
+                [
+                    310,
+                    255
+                ]
+            ],
+            "componentName": "Core.Structural.Annotation",
+            "description": "This is a non-static flow, where the systems asks the user for a file name.",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.Annotation",
+            "guid": "{1EDB454D-7CBA-4173-8BF4-90529C6637B1}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+            ]
+        },
+        {
+            "colourThemeIndex": 0,
+            "bounds": [
+                935,
+                120,
+                1175,
+                190,
+                [
+                    935,
+                    120
+                ],
+                [
+                    1175,
+                    190
+                ]
+            ],
+            "componentName": "Core.Structural.Annotation",
+            "description": "Raise an exception if the file already exists",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.Annotation",
+            "guid": "{88DFD497-A22C-4EB3-A959-6110F0111943}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+                "{4BDC6B7B-12C9-499F-9EBD-C9CC35672862}"
+            ]
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        672,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        734,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{E950C34F-F13C-4A52-97EB-3358C653117A}",
+            "toElement": "{2F14F9AB-C6FE-4242-8001-4C7F56488F71}",
+            "fromElement": "{F2C3D51D-E15B-43D2-8F9A-DCBC35AF0175}"
+        },
+        {
+            "fileTypes": "",
+            "isOpenFileDialog": true,
+            "defaultFilePath": "",
+            "expression": "",
+            "bounds": [
+                488,
+                419,
+                672,
+                491,
+                [
+                    488,
+                    419
+                ],
+                [
+                    672,
+                    491
+                ]
+            ],
+            "componentName": "Core.Activities.OpenDialog",
+            "description": "",
+            "caption": "Ask for imput",
+            "documentation": "",
+            "elementClass": "Core.Activities.OpenDialog",
+            "guid": "{F2C3D51D-E15B-43D2-8F9A-DCBC35AF0175}",
+            "incomingSequences": [
+                "{8D078FA0-8A4B-4E8D-9F9E-5737AA4815FC}"
+            ],
+            "outgoingSequences": [
+                "{E950C34F-F13C-4A52-97EB-3358C653117A}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{8B97958A-8AEF-4400-8922-FF17DBE9AB1D}",
+            "variableToFillPath": "{79437066-601A-4E63-9D4F-6EDBF6F099D1}",
+            "options": [
+            ]
+        },
+        {
+            "name": "IsExecuted",
+            "variableType": "Boolean_",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{8B97958A-8AEF-4400-8922-FF17DBE9AB1D}",
+            "owner": "{F2C3D51D-E15B-43D2-8F9A-DCBC35AF0175}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        100,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        144,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{DA23096A-C537-42CC-8670-BD82A012435C}",
+            "toElement": "{6AD2C621-636B-4BB4-9738-5AF525F1DF12}",
+            "fromElement": "{566DA703-91B7-4775-A051-74D0C108C9F6}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        426,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        488,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{8D078FA0-8A4B-4E8D-9F9E-5737AA4815FC}",
+            "toElement": "{F2C3D51D-E15B-43D2-8F9A-DCBC35AF0175}",
+            "fromElement": "{6AD2C621-636B-4BB4-9738-5AF525F1DF12}"
+        },
+        {
+            "expression": "",
+            "bounds": [
+                144,
+                419,
+                426,
+                491,
+                [
+                    144,
+                    419
+                ],
+                [
+                    426,
+                    491
+                ]
+            ],
+            "componentName": "Core.Activities.CreateVariable",
+            "description": "",
+            "caption": "Create a Filename variable",
+            "documentation": "",
+            "elementClass": "Core.Activities.CreateVariable",
+            "guid": "{6AD2C621-636B-4BB4-9738-5AF525F1DF12}",
+            "incomingSequences": [
+                "{DA23096A-C537-42CC-8670-BD82A012435C}"
+            ],
+            "outgoingSequences": [
+                "{8D078FA0-8A4B-4E8D-9F9E-5737AA4815FC}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{79437066-601A-4E63-9D4F-6EDBF6F099D1}"
+        },
+        {
+            "name": "Filename",
+            "variableType": "string_",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{79437066-601A-4E63-9D4F-6EDBF6F099D1}",
+            "owner": "{6AD2C621-636B-4BB4-9738-5AF525F1DF12}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        1024,
+                        0
+                    ],
+                    "From_",
+                    "Bottom",
+                    0,
+                    [
+                        1055,
+                        190
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        769,
+                        0
+                    ],
+                    "To_",
+                    "Top",
+                    0,
+                    [
+                        1155,
+                        255
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{4BDC6B7B-12C9-499F-9EBD-C9CC35672862}",
+            "toElement": "{31E5CFAA-D117-4C7A-900B-E5C7891E643D}",
+            "fromElement": "{88DFD497-A22C-4EB3-A959-6110F0111943}"
+        }
+    ]
+}

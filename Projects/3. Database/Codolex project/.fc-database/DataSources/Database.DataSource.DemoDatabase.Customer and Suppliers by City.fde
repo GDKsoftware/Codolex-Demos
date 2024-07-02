@@ -1,0 +1,89 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "View",
+    "sourceLocation": "Database",
+    "selectStatement": "",
+    "isReadOnly": true,
+    "name": "Customer and Suppliers by City",
+    "sourceName": "Customer and Suppliers by City",
+    "guid": "{D31070F9-9EFF-41FB-9F7E-369F4006F68F}",
+    "fields": [
+        {
+            "name": "City",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "City",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{A7BD983D-AE87-47BB-83C2-4B5E3E48A9D1}"
+        },
+        {
+            "name": "CompanyName",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "CompanyName",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{3CA325D0-8BD6-48A7-AECA-DE58A0C3E4F9}"
+        },
+        {
+            "name": "ContactName",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "ContactName",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 3,
+            "generator": "",
+            "guid": "{891B8FC6-093A-4E5E-A06B-5A53DC117B9E}"
+        },
+        {
+            "name": "Relationship",
+            "dataType": "string_",
+            "size": 32767,
+            "defaultValue": "",
+            "sourceName": "Relationship",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 4,
+            "generator": "",
+            "guid": "{9E5D207C-330A-44B3-8FB2-4E118135BA5E}"
+        }
+    ],
+    "associations": [
+    ],
+    "datasource": "{E08200E9-36AC-48E1-955E-8A62C98D45EA}"
+}

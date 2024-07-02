@@ -1,0 +1,90 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Database",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "Categories",
+    "sourceName": "Categories",
+    "guid": "{D1F20D8D-9923-462C-95FF-747947E63BCC}",
+    "fields": [
+        {
+            "name": "CategoryID",
+            "dataType": "AutoIncrement_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "CategoryID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{79952F6B-8E8B-40B9-AE22-E4D0BB37A838}"
+        },
+        {
+            "name": "CategoryName",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "CategoryName",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{74B76381-D078-48C5-9528-DD6C2B02330E}"
+        },
+        {
+            "name": "Description",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "Description",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 3,
+            "generator": "",
+            "guid": "{65411D90-8D4F-4825-A66D-6907548CE48F}"
+        },
+        {
+            "name": "Picture",
+            "dataType": "Binary",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "Picture",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 4,
+            "generator": "",
+            "guid": "{1403801C-A182-491C-8B87-AA7E9E53B998}"
+        }
+    ],
+    "associations": [
+        "{D25BE9D5-CE62-4341-9856-1C929DB5686D}"
+    ],
+    "datasource": "{E08200E9-36AC-48E1-955E-8A62C98D45EA}"
+}

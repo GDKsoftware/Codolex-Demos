@@ -1,0 +1,218 @@
+{
+    "name": "DemoDatabase",
+    "dataSourceType": "Database",
+    "databaseServer": "Default",
+    "generators": [
+    ],
+    "guid": "{E08200E9-36AC-48E1-955E-8A62C98D45EA}",
+    "entityFiles": [
+        {
+            "guid": "{25782866-2262-4116-AA83-D11C85150E9C}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Alphabetical list of products.fde"
+        },
+        {
+            "guid": "{D1F20D8D-9923-462C-95FF-747947E63BCC}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Categories.fde"
+        },
+        {
+            "guid": "{D31070F9-9EFF-41FB-9F7E-369F4006F68F}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Customer and Suppliers by City.fde"
+        },
+        {
+            "guid": "{58820040-3524-45AE-AF0E-F5399E78D13C}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Customers.fde"
+        },
+        {
+            "guid": "{B3D427FC-201E-482C-B7A4-25F3567266D9}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.EmployeeTerritories.fde"
+        },
+        {
+            "guid": "{66D2A28A-6345-4C91-B789-4F8626A6CD08}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Employees.fde"
+        },
+        {
+            "guid": "{2B4D3318-F6D3-4BA7-98D1-6DAEB3A37AE2}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Order_Details.fde"
+        },
+        {
+            "guid": "{A478BB27-2E32-441B-9315-99F1A94DC865}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Orders.fde"
+        },
+        {
+            "guid": "{D5E62B6E-8A57-49F1-BDF5-0C98016320FD}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Products.fde"
+        },
+        {
+            "guid": "{E34D4077-3FB7-4FAF-A9D8-7C6C593743EC}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Regions.fde"
+        },
+        {
+            "guid": "{69A78E0B-E8F6-4729-A69A-716840CD6340}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Shippers.fde"
+        },
+        {
+            "guid": "{51A2318F-FFD8-449D-9AA9-EBAE345F16F8}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Suppliers.fde"
+        },
+        {
+            "guid": "{D6082CBB-7548-4C23-941C-7D7C0B78DA70}",
+            "filePath": "DataSources\\Database.DataSource.DemoDatabase.Territories.fde"
+        }
+    ],
+    "associations": [
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_0",
+            "sourceName": "FK_0",
+            "guid": "{72BD3BA9-9F04-4D7B-B9DC-41C48659435D}",
+            "fromEntity": "{66D2A28A-6345-4C91-B789-4F8626A6CD08}",
+            "fromField": "{718E0D08-D71B-473D-B5E9-DE28ED01D0C7}",
+            "toEntity": "{66D2A28A-6345-4C91-B789-4F8626A6CD08}",
+            "toField": "{92D87090-CD60-4C1D-B41C-83A3CAA36DD1}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_0",
+            "sourceName": "FK_0",
+            "guid": "{68AA62F2-F960-4BF8-8509-2BAD30CA1B52}",
+            "fromEntity": "{B3D427FC-201E-482C-B7A4-25F3567266D9}",
+            "fromField": "{1A5ECBD9-5FE6-422C-8A83-299BCABC6BAE}",
+            "toEntity": "{D6082CBB-7548-4C23-941C-7D7C0B78DA70}",
+            "toField": "{D31A745C-9942-4E13-B093-2ABB64077E8C}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_1",
+            "sourceName": "FK_1",
+            "guid": "{A6338FE9-09FE-42B4-919A-4AE2C8CB3C28}",
+            "fromEntity": "{B3D427FC-201E-482C-B7A4-25F3567266D9}",
+            "fromField": "{8BA94F73-93D9-487E-BD1A-9B5D6594DEFD}",
+            "toEntity": "{66D2A28A-6345-4C91-B789-4F8626A6CD08}",
+            "toField": "{92D87090-CD60-4C1D-B41C-83A3CAA36DD1}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_0",
+            "sourceName": "FK_0",
+            "guid": "{95FC0027-4027-4AEB-9802-641A1A12D4B2}",
+            "fromEntity": "{2B4D3318-F6D3-4BA7-98D1-6DAEB3A37AE2}",
+            "fromField": "{9E089B78-298D-4F51-8101-9AB6E9740C30}",
+            "toEntity": "{D5E62B6E-8A57-49F1-BDF5-0C98016320FD}",
+            "toField": "{A8B959EC-DEBF-4663-9370-828C27C1C5DB}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_1",
+            "sourceName": "FK_1",
+            "guid": "{FD25AFC7-C7B8-493F-AD68-317FF2E579AE}",
+            "fromEntity": "{2B4D3318-F6D3-4BA7-98D1-6DAEB3A37AE2}",
+            "fromField": "{4C441B2D-05EE-4924-8EB3-B9D2B32A0E88}",
+            "toEntity": "{A478BB27-2E32-441B-9315-99F1A94DC865}",
+            "toField": "{91AF696A-9905-4DF4-A962-BF0156048A75}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_0",
+            "sourceName": "FK_0",
+            "guid": "{D61D94B4-D1E5-488C-A548-78D2728A30DE}",
+            "fromEntity": "{A478BB27-2E32-441B-9315-99F1A94DC865}",
+            "fromField": "{CB89997C-B341-4361-B462-0F52B4D09808}",
+            "toEntity": "{69A78E0B-E8F6-4729-A69A-716840CD6340}",
+            "toField": "{73A441EE-5BAD-45FF-A4C3-BBB4B9BDC134}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_1",
+            "sourceName": "FK_1",
+            "guid": "{BE019EDE-B7C6-4407-9838-5CD4E7BD382D}",
+            "fromEntity": "{A478BB27-2E32-441B-9315-99F1A94DC865}",
+            "fromField": "{D0763389-F8E5-403B-995F-7E46F8929768}",
+            "toEntity": "{58820040-3524-45AE-AF0E-F5399E78D13C}",
+            "toField": "{02A5DA87-41A2-437D-B198-270901001BC9}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_2",
+            "sourceName": "FK_2",
+            "guid": "{3710A464-4C88-484B-9FE7-DFF04F5818A6}",
+            "fromEntity": "{A478BB27-2E32-441B-9315-99F1A94DC865}",
+            "fromField": "{30CFD809-7258-408D-BF11-7BC50B5C7FEA}",
+            "toEntity": "{66D2A28A-6345-4C91-B789-4F8626A6CD08}",
+            "toField": "{92D87090-CD60-4C1D-B41C-83A3CAA36DD1}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_0",
+            "sourceName": "FK_0",
+            "guid": "{1FCE8160-D1A1-41AC-A5B2-F0F7DF026735}",
+            "fromEntity": "{D5E62B6E-8A57-49F1-BDF5-0C98016320FD}",
+            "fromField": "{A75C137C-9E82-4A4B-9D53-887CCC8CA812}",
+            "toEntity": "{51A2318F-FFD8-449D-9AA9-EBAE345F16F8}",
+            "toField": "{FD03D4D9-536C-450D-9B70-4FD0450D6151}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_1",
+            "sourceName": "FK_1",
+            "guid": "{D25BE9D5-CE62-4341-9856-1C929DB5686D}",
+            "fromEntity": "{D5E62B6E-8A57-49F1-BDF5-0C98016320FD}",
+            "fromField": "{4A0C1732-6B62-4DF9-9543-21AACA9765A9}",
+            "toEntity": "{D1F20D8D-9923-462C-95FF-747947E63BCC}",
+            "toField": "{79952F6B-8E8B-40B9-AE22-E4D0BB37A838}"
+        },
+        {
+            "associationType": "OneToMany",
+            "points": [
+            ],
+            "isAutoCreate": true,
+            "foreignName": "",
+            "name": "FK_0",
+            "sourceName": "FK_0",
+            "guid": "{2FCA2555-C2E4-4FC6-A0CF-B31174414BBC}",
+            "fromEntity": "{D6082CBB-7548-4C23-941C-7D7C0B78DA70}",
+            "fromField": "{289BFE8B-6CD6-426C-9F05-E75A8CC39792}",
+            "toEntity": "{E34D4077-3FB7-4FAF-A9D8-7C6C593743EC}",
+            "toField": "{731599E8-62E2-4A96-80D3-01D8424E1679}"
+        }
+    ]
+}

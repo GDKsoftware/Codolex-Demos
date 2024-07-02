@@ -1,0 +1,22 @@
+{
+    "name": "HelloWorld",
+    "fileName": "HelloWorld.fcp",
+    "supportedLanguages": 1,
+    "projectVersion": "2.1.0",
+    "storageVersion": "1.5.0",
+    "guid": "{E779A29E-4A46-49B0-A0C1-D4089C0DD646}",
+    "datasources": [
+    ],
+    "modules": [
+        {
+            "name": "HelloWorld",
+            "guid": "{A9DA8B03-A7F7-441B-8785-C1903F2D2117}",
+            "FlowClasses": [
+                {
+                    "guid": "{70DA073F-CAA3-4DD8-9EFC-DBFE7E10299B}",
+                    "filePath": "HelloWorld\\HelloWorld.HelloWorld.fsf"
+                }
+            ]
+        }
+    ]
+}

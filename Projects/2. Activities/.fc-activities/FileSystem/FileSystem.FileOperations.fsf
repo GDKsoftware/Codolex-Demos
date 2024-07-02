@@ -1,0 +1,17 @@
+{
+    "name": "FileOperations",
+    "language": "Delphi",
+    "guid": "{88AD4242-8398-405A-984C-D14C46D73341}",
+    "flows": [
+        {
+            "guid": "{FC85C886-974E-4B03-8672-19F81280284F}",
+            "filePath": "FileSystem\\FileSystem.FileOperations.CreateFile.fsf"
+        },
+        {
+            "guid": "{9CEA8D09-C654-408A-ACA7-E44C47E6424A}",
+            "filePath": "FileSystem\\FileSystem.FileOperations.SaveToFile.fsf"
+        }
+    ],
+    "variables": [
+    ]
+}

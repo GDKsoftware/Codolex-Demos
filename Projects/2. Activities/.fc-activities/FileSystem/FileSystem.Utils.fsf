@@ -1,0 +1,21 @@
+{
+    "name": "Utils",
+    "language": "Delphi",
+    "guid": "{80F8FAD1-E79D-4079-AFEB-FD8F0799ED50}",
+    "flows": [
+        {
+            "guid": "{B2A0AD20-028F-4FD0-BA9E-E2B2A9B064C7}",
+            "filePath": "FileSystem\\FileSystem.Utils.AskUserForFile.fsf"
+        },
+        {
+            "guid": "{8B4D3E80-1FA5-4A5F-82FE-EF30B85C7D86}",
+            "filePath": "FileSystem\\FileSystem.Utils.ShowHomeDirectory.fsf"
+        },
+        {
+            "guid": "{FCC1A64E-F56B-472B-A0DE-4285D4F5B7E7}",
+            "filePath": "FileSystem\\FileSystem.Utils.Validation.fsf"
+        }
+    ],
+    "variables": [
+    ]
+}

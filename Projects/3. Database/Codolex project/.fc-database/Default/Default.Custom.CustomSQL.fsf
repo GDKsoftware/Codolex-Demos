@@ -1,0 +1,242 @@
+{
+    "name": "CustomSQL",
+    "visibility": "Public_",
+    "isStatic": true,
+    "returnValue": "{7106F9B0-12E9-48E5-B555-B5C39F9A3959}",
+    "autorisationSettings": {
+        "hasAnonymousAccess": false,
+        "rolesWithAccess": [
+        ],
+        "guid": "{2B75F858-46E1-4382-BCA9-0BF5344370A3}"
+    },
+    "apiEndpoint": {
+        "rESTMethod": "Automatic",
+        "path": "",
+        "guid": "{35F33FE1-6C0E-4914-8A89-C0012FEC1317}"
+    },
+    "isFunction": true,
+    "isPublished": false,
+    "guid": "{9C12129B-F015-499D-94E1-99A58D84F136}",
+    "start": "{C01A0B80-B20D-4933-A76F-E4F260653F08}",
+    "ends": [
+        "{5DF001FA-E6EE-4D88-B476-794A18A96341}"
+    ],
+    "parameters": [
+    ],
+    "elements": [
+        {
+            "bounds": [
+                90,
+                420,
+                160,
+                490,
+                [
+                    90,
+                    420
+                ],
+                [
+                    160,
+                    490
+                ]
+            ],
+            "componentName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Start.TFlowStart",
+            "guid": "{C01A0B80-B20D-4933-A76F-E4F260653F08}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+                "{D76C40FC-907B-4586-965F-6CB780D880FC}"
+            ],
+            "startSequence": "{D76C40FC-907B-4586-965F-6CB780D880FC}"
+        },
+        {
+            "returnVariable": "{C4F03D8F-F00A-4CEE-B975-C72B13D0D9D4}",
+            "bounds": [
+                705,
+                420,
+                775,
+                490,
+                [
+                    705,
+                    420
+                ],
+                [
+                    775,
+                    490
+                ]
+            ],
+            "componentName": "Core.Structural.End",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.End",
+            "guid": "{5DF001FA-E6EE-4D88-B476-794A18A96341}",
+            "incomingSequences": [
+                "{2BCD802D-DCE6-4CAA-98A0-A98DF3DE940E}"
+            ],
+            "outgoingSequences": [
+            ]
+        },
+        {
+            "name": "CustomSQLResult",
+            "variableType": "Integer_",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{7106F9B0-12E9-48E5-B555-B5C39F9A3959}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        160,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        261,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{D76C40FC-907B-4586-965F-6CB780D880FC}",
+            "toElement": "{26AE69CA-C290-4FC1-8238-CD0ABF668C4B}",
+            "fromElement": "{C01A0B80-B20D-4933-A76F-E4F260653F08}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        579,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        705,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{2BCD802D-DCE6-4CAA-98A0-A98DF3DE940E}",
+            "toElement": "{5DF001FA-E6EE-4D88-B476-794A18A96341}",
+            "fromElement": "{26AE69CA-C290-4FC1-8238-CD0ABF668C4B}"
+        },
+        {
+            "databaseCommand": "'select count(*) as Total from Customers'",
+            "resultField": "Total",
+            "expression": "",
+            "bounds": [
+                261,
+                419,
+                579,
+                491,
+                [
+                    261,
+                    419
+                ],
+                [
+                    579,
+                    491
+                ]
+            ],
+            "componentName": "Core.Activities.DatabaseCommand",
+            "description": "",
+            "caption": "Get total amount of Customers",
+            "documentation": "",
+            "elementClass": "Core.Activities.DatabaseCommand",
+            "guid": "{26AE69CA-C290-4FC1-8238-CD0ABF668C4B}",
+            "incomingSequences": [
+                "{D76C40FC-907B-4586-965F-6CB780D880FC}"
+            ],
+            "outgoingSequences": [
+                "{2BCD802D-DCE6-4CAA-98A0-A98DF3DE940E}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{C4F03D8F-F00A-4CEE-B975-C72B13D0D9D4}",
+            "dataSource": "{E08200E9-36AC-48E1-955E-8A62C98D45EA}"
+        },
+        {
+            "name": "Total",
+            "variableType": "Integer_",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{C4F03D8F-F00A-4CEE-B975-C72B13D0D9D4}",
+            "owner": "{26AE69CA-C290-4FC1-8238-CD0ABF668C4B}"
+        }
+    ]
+}

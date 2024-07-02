@@ -1,0 +1,60 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Database",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "Regions",
+    "sourceName": "Regions",
+    "guid": "{E34D4077-3FB7-4FAF-A9D8-7C6C593743EC}",
+    "fields": [
+        {
+            "name": "RegionID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "RegionID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{731599E8-62E2-4A96-80D3-01D8424E1679}"
+        },
+        {
+            "name": "RegionDescription",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "RegionDescription",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{BF07B9CE-9784-4296-9D34-328E637A900E}"
+        }
+    ],
+    "associations": [
+        "{2FCA2555-C2E4-4FC6-A0CF-B31174414BBC}"
+    ],
+    "datasource": "{E08200E9-36AC-48E1-955E-8A62C98D45EA}"
+}

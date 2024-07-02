@@ -1,0 +1,61 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Database",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "EmployeeTerritories",
+    "sourceName": "EmployeeTerritories",
+    "guid": "{B3D427FC-201E-482C-B7A4-25F3567266D9}",
+    "fields": [
+        {
+            "name": "EmployeeID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "EmployeeID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{8BA94F73-93D9-487E-BD1A-9B5D6594DEFD}"
+        },
+        {
+            "name": "TerritoryID",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "TerritoryID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{1A5ECBD9-5FE6-422C-8A83-299BCABC6BAE}"
+        }
+    ],
+    "associations": [
+        "{68AA62F2-F960-4BF8-8509-2BAD30CA1B52}",
+        "{A6338FE9-09FE-42B4-919A-4AE2C8CB3C28}"
+    ],
+    "datasource": "{E08200E9-36AC-48E1-955E-8A62C98D45EA}"
+}

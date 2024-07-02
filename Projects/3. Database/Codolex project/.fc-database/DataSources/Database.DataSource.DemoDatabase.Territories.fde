@@ -1,0 +1,76 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Database",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "Territories",
+    "sourceName": "Territories",
+    "guid": "{D6082CBB-7548-4C23-941C-7D7C0B78DA70}",
+    "fields": [
+        {
+            "name": "TerritoryID",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "TerritoryID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{D31A745C-9942-4E13-B093-2ABB64077E8C}"
+        },
+        {
+            "name": "TerritoryDescription",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "TerritoryDescription",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{5B35303D-0E61-4F4C-B816-367BCEC4F015}"
+        },
+        {
+            "name": "RegionID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "RegionID",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 3,
+            "generator": "",
+            "guid": "{289BFE8B-6CD6-426C-9F05-E75A8CC39792}"
+        }
+    ],
+    "associations": [
+        "{68AA62F2-F960-4BF8-8509-2BAD30CA1B52}",
+        "{2FCA2555-C2E4-4FC6-A0CF-B31174414BBC}"
+    ],
+    "datasource": "{E08200E9-36AC-48E1-955E-8A62C98D45EA}"
+}

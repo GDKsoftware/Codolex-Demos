@@ -1,0 +1,17 @@
+{
+    "name": "Hasing",
+    "language": "Delphi",
+    "guid": "{7E55926B-3AC0-43D9-A924-E27D4FEB1000}",
+    "flows": [
+        {
+            "guid": "{AEF4BDB0-E945-41A8-89C5-F338C229A151}",
+            "filePath": "FileSystem\\FileSystem.Hasing.CheckFileHash.fsf"
+        },
+        {
+            "guid": "{D3A13892-AAD7-453F-B971-10C8A6A056B4}",
+            "filePath": "FileSystem\\FileSystem.Hasing.CompareFileHash.fsf"
+        }
+    ],
+    "variables": [
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Customers",
+    "variables": [
+    ],
+    "language": "Delphi",
+    "guid": "{7CD071F7-C2D5-4ED5-84A1-4C0F748CAAE2}",
+    "flows": [
+        {
+            "guid": "{B877537F-2F4E-4B32-A29B-93394AD9FF0E}",
+            "filePath": "Default\\Default.Customers.GetAllCustomers.fsf"
+        },
+        {
+            "guid": "{1D0928D3-B8E9-480E-96E0-722166C7C3A7}",
+            "filePath": "Default\\Default.Customers.SearchCustomer.fsf"
+        }
+    ]
+}

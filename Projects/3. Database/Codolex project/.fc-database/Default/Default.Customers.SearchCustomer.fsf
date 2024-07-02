@@ -1,0 +1,720 @@
+{
+    "name": "SearchCustomer",
+    "visibility": "Public_",
+    "isStatic": true,
+    "returnValue": "{D0D39E9B-B13F-499F-8326-AAFEA9CBD57F}",
+    "autorisationSettings": {
+        "hasAnonymousAccess": false,
+        "rolesWithAccess": [
+        ],
+        "guid": "{78CB10BD-5F3C-42ED-981D-9705E20247D4}"
+    },
+    "apiEndpoint": {
+        "rESTMethod": "Automatic",
+        "path": "",
+        "guid": "{DBB09C64-2136-4DC0-867E-9932668E6777}"
+    },
+    "isFunction": true,
+    "isPublished": false,
+    "guid": "{1D0928D3-B8E9-480E-96E0-722166C7C3A7}",
+    "start": "{B64F9D42-77B7-40BE-A5D0-0B20067A1DCE}",
+    "ends": [
+        "{E951C8D3-8470-44FC-93E6-4E21E669D787}"
+    ],
+    "parameters": [
+        "{82CD6B4A-B161-44BC-8DEF-5671748558B0}"
+    ],
+    "elements": [
+        {
+            "returnVariable": "{F53658B8-218A-4955-94F1-8FC322063C4C}",
+            "bounds": [
+                1168,
+                420,
+                1238,
+                490,
+                [
+                    1168,
+                    420
+                ],
+                [
+                    1238,
+                    490
+                ]
+            ],
+            "componentName": "Core.Structural.End",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.End",
+            "guid": "{E951C8D3-8470-44FC-93E6-4E21E669D787}",
+            "incomingSequences": [
+                "{55286EA8-043D-4A3C-A951-793977E90000}"
+            ],
+            "outgoingSequences": [
+            ]
+        },
+        {
+            "name": "Customers",
+            "variableType": "Entity_",
+            "collectionType": "Entity_",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{D0D39E9B-B13F-499F-8326-AAFEA9CBD57F}",
+            "entity": "{58820040-3524-45AE-AF0E-F5399E78D13C}"
+        },
+        {
+            "bounds": [
+                66,
+                313,
+                182,
+                347,
+                [
+                    66,
+                    313
+                ],
+                [
+                    182,
+                    347
+                ]
+            ],
+            "componentName": "Core.Structural.Parameter",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.Parameter",
+            "guid": "{82CD6B4A-B161-44BC-8DEF-5671748558B0}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+            ],
+            "variable": "{2043FC5B-2C49-43ED-844C-A76E28E7DE62}"
+        },
+        {
+            "name": "CustomerName",
+            "variableType": "string_",
+            "collectionType": "None",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{2043FC5B-2C49-43ED-844C-A76E28E7DE62}",
+            "owner": "{82CD6B4A-B161-44BC-8DEF-5671748558B0}"
+        },
+        {
+            "where": "CompanyName like :LikeCustomerName",
+            "limitResultOption": "First",
+            "queryMode": "DatabaseEntity",
+            "offset": 0,
+            "rowCount": 1,
+            "orderBy": "CompanyName",
+            "customQuery": "",
+            "expression": "",
+            "bounds": [
+                416,
+                419,
+                634,
+                491,
+                [
+                    416,
+                    419
+                ],
+                [
+                    634,
+                    491
+                ]
+            ],
+            "componentName": "Core.Activities.DatabaseGet",
+            "description": "",
+            "caption": "Search Customers",
+            "documentation": "",
+            "elementClass": "Core.Activities.DatabaseGet",
+            "guid": "{2C976DBC-A492-4597-8236-60435F333946}",
+            "incomingSequences": [
+                "{D5560192-4531-4113-A4C0-5628D71229A0}"
+            ],
+            "outgoingSequences": [
+                "{52F10512-17BA-4CD6-A3E6-275645EDF26C}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{F53658B8-218A-4955-94F1-8FC322063C4C}",
+            "joins": [
+            ]
+        },
+        {
+            "name": "Customer",
+            "variableType": "Entity_",
+            "collectionType": "Entity_",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{F53658B8-218A-4955-94F1-8FC322063C4C}",
+            "entity": "{58820040-3524-45AE-AF0E-F5399E78D13C}",
+            "owner": "{2C976DBC-A492-4597-8236-60435F333946}"
+        },
+        {
+            "orderNumber": 1,
+            "conditionType": "Boolean_",
+            "conditionOperator": "Equals",
+            "conditionValue": "True",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        1108,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        1168,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "True",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{55286EA8-043D-4A3C-A951-793977E90000}",
+            "toElement": "{E951C8D3-8470-44FC-93E6-4E21E669D787}",
+            "fromElement": "{6634D333-8965-4FAE-893A-CA829CC9099D}"
+        },
+        {
+            "variableToUse": "{467723C1-55BA-46BC-9775-C6DA8606BEE2}",
+            "fieldToUse": "",
+            "bounds": [
+                1038,
+                420,
+                1108,
+                490,
+                [
+                    1038,
+                    420
+                ],
+                [
+                    1108,
+                    490
+                ]
+            ],
+            "componentName": "Core.Structural.Decision",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.Decision",
+            "guid": "{6634D333-8965-4FAE-893A-CA829CC9099D}",
+            "incomingSequences": [
+                "{5AB06FAF-DE52-4761-A972-3B9039910E50}"
+            ],
+            "outgoingSequences": [
+                "{55286EA8-043D-4A3C-A951-793977E90000}",
+                "{B0F0E7AB-C302-4D4B-87F6-5007F9042CC2}"
+            ]
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        634,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        694,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{52F10512-17BA-4CD6-A3E6-275645EDF26C}",
+            "toElement": "{017BD428-FAF3-4DF3-8C16-0C68AF1DF4E8}",
+            "fromElement": "{2C976DBC-A492-4597-8236-60435F333946}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        978,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        1038,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{5AB06FAF-DE52-4761-A972-3B9039910E50}",
+            "toElement": "{6634D333-8965-4FAE-893A-CA829CC9099D}",
+            "fromElement": "{017BD428-FAF3-4DF3-8C16-0C68AF1DF4E8}"
+        },
+        {
+            "scope": "Local",
+            "flowClassVariable": "",
+            "expression": "",
+            "bounds": [
+                694,
+                419,
+                978,
+                491,
+                [
+                    694,
+                    419
+                ],
+                [
+                    978,
+                    491
+                ]
+            ],
+            "componentName": "Core.Activities.CreateVariable",
+            "description": "",
+            "caption": "Check if customer is found",
+            "documentation": "",
+            "elementClass": "Core.Activities.CreateVariable",
+            "guid": "{017BD428-FAF3-4DF3-8C16-0C68AF1DF4E8}",
+            "incomingSequences": [
+                "{52F10512-17BA-4CD6-A3E6-275645EDF26C}"
+            ],
+            "outgoingSequences": [
+                "{5AB06FAF-DE52-4761-A972-3B9039910E50}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{467723C1-55BA-46BC-9775-C6DA8606BEE2}"
+        },
+        {
+            "name": "CustomerFound",
+            "variableType": "Boolean_",
+            "collectionType": "None",
+            "expression": "Assigned(Customer)",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{467723C1-55BA-46BC-9775-C6DA8606BEE2}",
+            "owner": "{017BD428-FAF3-4DF3-8C16-0C68AF1DF4E8}"
+        },
+        {
+            "message": "No customer found!",
+            "exceptionType": "",
+            "exceptionNamespace": "",
+            "bounds": [
+                984,
+                225,
+                1054,
+                295,
+                [
+                    984,
+                    225
+                ],
+                [
+                    1054,
+                    295
+                ]
+            ],
+            "componentName": "Core.Structural.Exception",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.Exception",
+            "guid": "{3E56599D-AE57-410E-B306-71A2F9795FD0}",
+            "incomingSequences": [
+                "{B0F0E7AB-C302-4D4B-87F6-5007F9042CC2}"
+            ],
+            "outgoingSequences": [
+            ]
+        },
+        {
+            "orderNumber": 2,
+            "conditionType": "Boolean_",
+            "conditionOperator": "Equals",
+            "conditionValue": "False",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        768,
+                        0
+                    ],
+                    "From_",
+                    "Top",
+                    0,
+                    [
+                        1073,
+                        420
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        1025,
+                        0
+                    ],
+                    "To_",
+                    "Bottom",
+                    0,
+                    [
+                        1019,
+                        295
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "False",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{B0F0E7AB-C302-4D4B-87F6-5007F9042CC2}",
+            "toElement": "{3E56599D-AE57-410E-B306-71A2F9795FD0}",
+            "fromElement": "{6634D333-8965-4FAE-893A-CA829CC9099D}"
+        },
+        {
+            "bounds": [
+                30,
+                420,
+                100,
+                490,
+                [
+                    30,
+                    420
+                ],
+                [
+                    100,
+                    490
+                ]
+            ],
+            "componentName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Start.TFlowStart",
+            "guid": "{B64F9D42-77B7-40BE-A5D0-0B20067A1DCE}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+                "{A7BFC374-EA8C-43A6-8155-27E830D79382}"
+            ],
+            "startSequence": "{A7BFC374-EA8C-43A6-8155-27E830D79382}"
+        },
+        {
+            "colourThemeIndex": 0,
+            "bounds": [
+                140,
+                175,
+                380,
+                245,
+                [
+                    140,
+                    175
+                ],
+                [
+                    380,
+                    245
+                ]
+            ],
+            "componentName": "Core.Structural.Annotation",
+            "description": "We need to add the % to the variable, for the \"Like\" search",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.Annotation",
+            "guid": "{5433F7DE-3A37-498A-9A8A-F0B3F90B7625}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+                "{35F2F149-57E2-48F2-B81D-CB5868EB1837}"
+            ]
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        100,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        162,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{A7BFC374-EA8C-43A6-8155-27E830D79382}",
+            "toElement": "{908A9F41-86F8-4B1E-8052-D0E0B309A36B}",
+            "fromElement": "{B64F9D42-77B7-40BE-A5D0-0B20067A1DCE}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        358,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        416,
+                        455
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{D5560192-4531-4113-A4C0-5628D71229A0}",
+            "toElement": "{2C976DBC-A492-4597-8236-60435F333946}",
+            "fromElement": "{908A9F41-86F8-4B1E-8052-D0E0B309A36B}"
+        },
+        {
+            "scope": "Local",
+            "flowClassVariable": "",
+            "expression": "",
+            "bounds": [
+                162,
+                419,
+                358,
+                491,
+                [
+                    162,
+                    419
+                ],
+                [
+                    358,
+                    491
+                ]
+            ],
+            "componentName": "Core.Activities.CreateVariable",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Activities.CreateVariable",
+            "guid": "{908A9F41-86F8-4B1E-8052-D0E0B309A36B}",
+            "incomingSequences": [
+                "{A7BFC374-EA8C-43A6-8155-27E830D79382}",
+                "{35F2F149-57E2-48F2-B81D-CB5868EB1837}"
+            ],
+            "outgoingSequences": [
+                "{D5560192-4531-4113-A4C0-5628D71229A0}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{527A5F3D-362F-4608-9833-D12C4D7964E7}"
+        },
+        {
+            "name": "LikeCustomerName",
+            "variableType": "string_",
+            "collectionType": "None",
+            "expression": "'%' + CustomerName + '%'",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{527A5F3D-362F-4608-9833-D12C4D7964E7}",
+            "owner": "{908A9F41-86F8-4B1E-8052-D0E0B309A36B}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        1024,
+                        0
+                    ],
+                    "From_",
+                    "Bottom",
+                    0,
+                    [
+                        260,
+                        245
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        769,
+                        0
+                    ],
+                    "To_",
+                    "Top",
+                    0,
+                    [
+                        260,
+                        419
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{35F2F149-57E2-48F2-B81D-CB5868EB1837}",
+            "toElement": "{908A9F41-86F8-4B1E-8052-D0E0B309A36B}",
+            "fromElement": "{5433F7DE-3A37-498A-9A8A-F0B3F90B7625}"
+        }
+    ]
+}

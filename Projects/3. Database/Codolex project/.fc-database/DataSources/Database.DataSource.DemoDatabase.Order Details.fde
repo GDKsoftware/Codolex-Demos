@@ -1,0 +1,106 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Database",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "Order Details",
+    "sourceName": "Order Details",
+    "guid": "{2B4D3318-F6D3-4BA7-98D1-6DAEB3A37AE2}",
+    "fields": [
+        {
+            "name": "OrderID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "OrderID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{4C441B2D-05EE-4924-8EB3-B9D2B32A0E88}"
+        },
+        {
+            "name": "ProductID",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "ProductID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{9E089B78-298D-4F51-8101-9AB6E9740C30}"
+        },
+        {
+            "name": "UnitPrice",
+            "dataType": "BigInt",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "UnitPrice",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 10,
+            "scale": 0,
+            "position": 3,
+            "generator": "",
+            "guid": "{8180CD93-CBCA-4EEF-B278-F6AF3DAFC092}"
+        },
+        {
+            "name": "Quantity",
+            "dataType": "Integer_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "Quantity",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 4,
+            "generator": "",
+            "guid": "{FDA63862-461A-4226-8E54-413DE17FC699}"
+        },
+        {
+            "name": "Discount",
+            "dataType": "Decimal_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "Discount",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 5,
+            "generator": "",
+            "guid": "{162AD7A0-35BF-4FD4-808F-988874078097}"
+        }
+    ],
+    "associations": [
+        "{95FC0027-4027-4AEB-9802-641A1A12D4B2}",
+        "{FD25AFC7-C7B8-493F-AD68-317FF2E579AE}"
+    ],
+    "datasource": "{E08200E9-36AC-48E1-955E-8A62C98D45EA}"
+}

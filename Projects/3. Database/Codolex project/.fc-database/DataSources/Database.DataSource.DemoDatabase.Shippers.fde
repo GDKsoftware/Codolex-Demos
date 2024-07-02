@@ -1,0 +1,75 @@
+{
+    "isPersistent": true,
+    "bounds": [
+        0,
+        0,
+        0,
+        0,
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "entityType": "Entity",
+    "sourceLocation": "Database",
+    "selectStatement": "",
+    "isReadOnly": false,
+    "name": "Shippers",
+    "sourceName": "Shippers",
+    "guid": "{69A78E0B-E8F6-4729-A69A-716840CD6340}",
+    "fields": [
+        {
+            "name": "ShipperID",
+            "dataType": "AutoIncrement_",
+            "size": 0,
+            "defaultValue": "",
+            "sourceName": "ShipperID",
+            "isPrimaryKeyField": true,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 1,
+            "generator": "",
+            "guid": "{73A441EE-5BAD-45FF-A4C3-BBB4B9BDC134}"
+        },
+        {
+            "name": "CompanyName",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "CompanyName",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 2,
+            "generator": "",
+            "guid": "{FF874986-DD3C-4C34-AD22-F1421B0E471E}"
+        },
+        {
+            "name": "Phone",
+            "dataType": "string_",
+            "size": 100,
+            "defaultValue": "",
+            "sourceName": "Phone",
+            "isPrimaryKeyField": false,
+            "isReadOnly": false,
+            "isCollection": false,
+            "precision": 0,
+            "scale": 0,
+            "position": 3,
+            "generator": "",
+            "guid": "{CFC52B4F-7BA9-433F-AAD3-47ECA50B30BB}"
+        }
+    ],
+    "associations": [
+        "{D61D94B4-D1E5-488C-A548-78D2728A30DE}"
+    ],
+    "datasource": "{E08200E9-36AC-48E1-955E-8A62C98D45EA}"
+}

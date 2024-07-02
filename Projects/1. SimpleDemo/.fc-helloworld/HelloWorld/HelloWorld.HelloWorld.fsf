@@ -1,0 +1,13 @@
+{
+    "name": "HelloWorld",
+    "language": "Delphi",
+    "guid": "{70DA073F-CAA3-4DD8-9EFC-DBFE7E10299B}",
+    "flows": [
+        {
+            "guid": "{08A462A3-504C-4702-BD5C-025716214D93}",
+            "filePath": "HelloWorld\\HelloWorld.HelloWorld.Hello.fsf"
+        }
+    ],
+    "variables": [
+    ]
+}

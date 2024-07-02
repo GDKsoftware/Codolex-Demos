@@ -1,0 +1,36 @@
+{
+    "name": "Database",
+    "fileName": "Database.fcp",
+    "supportedLanguages": 1,
+    "projectVersion": "2.2.1",
+    "autorisationRoles": [
+    ],
+    "storageVersion": "1.5.0",
+    "datasources": [
+        {
+            "guid": "{E08200E9-36AC-48E1-955E-8A62C98D45EA}",
+            "filePath": "Database.DataSource.DemoDatabase.fds"
+        }
+    ],
+    "guid": "{1F551114-D1FE-48FA-B353-74F469C743FC}",
+    "modules": [
+        {
+            "name": "Default",
+            "guid": "{8E24766C-3A9E-42D3-B163-B7DC3056545F}",
+            "FlowClasses": [
+                {
+                    "guid": "{322E9123-996A-4619-8105-AF4829CFA708}",
+                    "filePath": "Default\\Default.Custom.fsf"
+                },
+                {
+                    "guid": "{7CD071F7-C2D5-4ED5-84A1-4C0F748CAAE2}",
+                    "filePath": "Default\\Default.Customers.fsf"
+                },
+                {
+                    "guid": "{4FF5BA8F-DCCB-453F-B61C-74741F9F7DF3}",
+                    "filePath": "Default\\Default.Employees.fsf"
+                }
+            ]
+        }
+    ]
+}

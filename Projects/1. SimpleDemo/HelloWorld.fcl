@@ -1,0 +1,10 @@
+{
+    "programName": "HelloWorld.dproj",
+    "guid": "{45FCB092-4ED3-42FF-B7C5-C33A20E06BFD}",
+    "projects": [
+        {
+            "name": "HelloWorld",
+            "projectGUID": "{E779A29E-4A46-49B0-A0C1-D4089C0DD646}"
+        }
+    ]
+}

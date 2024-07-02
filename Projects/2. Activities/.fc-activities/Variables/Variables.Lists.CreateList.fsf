@@ -1,0 +1,268 @@
+{
+    "name": "CreateList",
+    "visibility": "Public_",
+    "isStatic": true,
+    "isFunction": true,
+    "guid": "{7DEC3FCF-215D-4242-B4A3-9B9390229F2E}",
+    "returnValue": "{49AD0E07-E82D-4314-BAFD-6AE9D376F9DA}",
+    "start": "{A40B4EFC-F057-4F83-AECB-7DCE01564AE0}",
+    "ends": [
+        "{F1B5CE79-C40A-4F42-A567-AF90F095CB8C}"
+    ],
+    "parameters": [
+        "{98CDAB6B-A936-4178-9413-44C685AD67EA}"
+    ],
+    "elements": [
+        {
+            "bounds": [
+                350,
+                405,
+                420,
+                475,
+                [
+                    350,
+                    405
+                ],
+                [
+                    420,
+                    475
+                ]
+            ],
+            "componentName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Start.TFlowStart",
+            "guid": "{A40B4EFC-F057-4F83-AECB-7DCE01564AE0}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+                "{3ACB0C47-9906-4D10-BCB6-ABD58E4DD23A}"
+            ],
+            "startSequence": "{3ACB0C47-9906-4D10-BCB6-ABD58E4DD23A}"
+        },
+        {
+            "bounds": [
+                1120,
+                405,
+                1190,
+                475,
+                [
+                    1120,
+                    405
+                ],
+                [
+                    1190,
+                    475
+                ]
+            ],
+            "componentName": "Core.Structural.End",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.End",
+            "guid": "{F1B5CE79-C40A-4F42-A567-AF90F095CB8C}",
+            "incomingSequences": [
+                "{A507D8C7-F9B7-49E1-85EF-E5200B99FE3A}"
+            ],
+            "outgoingSequences": [
+            ],
+            "returnVariable": "{6BEA3C44-1408-41D2-9483-CC635B9DB788}"
+        },
+        {
+            "name": "CreateListResultList",
+            "variableType": "List_",
+            "collectionType": "string_",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{49AD0E07-E82D-4314-BAFD-6AE9D376F9DA}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        420,
+                        440
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        637,
+                        440
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{3ACB0C47-9906-4D10-BCB6-ABD58E4DD23A}",
+            "toElement": "{FDA6CCDD-66A5-4060-B4D0-328F465BCF19}",
+            "fromElement": "{A40B4EFC-F057-4F83-AECB-7DCE01564AE0}"
+        },
+        {
+            "orderNumber": 0,
+            "conditionType": "None",
+            "conditionOperator": "None",
+            "conditionValue": "",
+            "points": [
+                [
+                    "Relative",
+                    [
+                        512,
+                        0
+                    ],
+                    "From_",
+                    "Right",
+                    0,
+                    [
+                        833,
+                        440
+                    ],
+                    "None",
+                    0,
+                    0
+                ],
+                [
+                    "Relative",
+                    [
+                        257,
+                        0
+                    ],
+                    "To_",
+                    "Left",
+                    0,
+                    [
+                        1120,
+                        440
+                    ],
+                    "None",
+                    0,
+                    0
+                ]
+            ],
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Sequence.TFlowSequence",
+            "guid": "{A507D8C7-F9B7-49E1-85EF-E5200B99FE3A}",
+            "toElement": "{F1B5CE79-C40A-4F42-A567-AF90F095CB8C}",
+            "fromElement": "{FDA6CCDD-66A5-4060-B4D0-328F465BCF19}"
+        },
+        {
+            "expression": "",
+            "bounds": [
+                637,
+                404,
+                833,
+                476,
+                [
+                    637,
+                    404
+                ],
+                [
+                    833,
+                    476
+                ]
+            ],
+            "componentName": "Core.Activities.CreateVariable",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Activities.CreateVariable",
+            "guid": "{FDA6CCDD-66A5-4060-B4D0-328F465BCF19}",
+            "incomingSequences": [
+                "{3ACB0C47-9906-4D10-BCB6-ABD58E4DD23A}"
+            ],
+            "outgoingSequences": [
+                "{A507D8C7-F9B7-49E1-85EF-E5200B99FE3A}"
+            ],
+            "boundaryEvents": [
+            ],
+            "returnVariable": "{6BEA3C44-1408-41D2-9483-CC635B9DB788}"
+        },
+        {
+            "name": "ValueList",
+            "variableType": "List_",
+            "collectionType": "string_",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{6BEA3C44-1408-41D2-9483-CC635B9DB788}",
+            "owner": "{FDA6CCDD-66A5-4060-B4D0-328F465BCF19}"
+        },
+        {
+            "bounds": [
+                328,
+                293,
+                452,
+                327,
+                [
+                    328,
+                    293
+                ],
+                [
+                    452,
+                    327
+                ]
+            ],
+            "componentName": "Core.Structural.Parameter",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "Core.Structural.Parameter",
+            "guid": "{98CDAB6B-A936-4178-9413-44C685AD67EA}",
+            "incomingSequences": [
+            ],
+            "outgoingSequences": [
+            ],
+            "variable": "{C34737FC-2C75-4324-9796-480D12DC7C95}"
+        },
+        {
+            "name": "ListValues",
+            "variableType": "List_",
+            "collectionType": "string_",
+            "expression": "",
+            "customTypeName": "",
+            "description": "",
+            "caption": "",
+            "documentation": "",
+            "elementClass": "FlowModel.Variable.TFlowVariable",
+            "guid": "{C34737FC-2C75-4324-9796-480D12DC7C95}",
+            "owner": "{98CDAB6B-A936-4178-9413-44C685AD67EA}"
+        }
+    ]
+}

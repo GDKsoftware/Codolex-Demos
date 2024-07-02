@@ -1,0 +1,21 @@
+{
+    "name": "Lists",
+    "language": "Delphi",
+    "guid": "{8FA25A73-4CFE-43FB-86ED-ABE86AE96C12}",
+    "flows": [
+        {
+            "guid": "{5C19E2A6-8CAA-49E4-8F17-1495761C8441}",
+            "filePath": "Variables\\Variables.Lists.AddToList.fsf"
+        },
+        {
+            "guid": "{7DEC3FCF-215D-4242-B4A3-9B9390229F2E}",
+            "filePath": "Variables\\Variables.Lists.CreateList.fsf"
+        },
+        {
+            "guid": "{5FAED42C-687D-41FA-9C4E-8F4FA4C07EC7}",
+            "filePath": "Variables\\Variables.Lists.GetListValues.fsf"
+        }
+    ],
+    "variables": [
+    ]
+}
